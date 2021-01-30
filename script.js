@@ -58,7 +58,7 @@ function bookBtn(firstClass, economy) {
  // Calculate Subtotal Amount***/
     subtotalTicketPrice.innerText = parseInt(firstClassInput.value) * 150 + parseInt(economyInput.value) * 100;
  // Calculate Charge 10% VAT***/
-    chargeTenPercent.innerText = Math.round(document.getElementById("subtotalTicketPrice").innerText * 0.1);
+    chargeTenPercent.innerText = Math.round(subtotalTicketPrice.innerText) * 0.1;
  // Calculate TotalCost***/
     document.getElementById("totalAmount").innerText = parseInt(subtotalTicketPrice.innerText) + parseInt(chargeTenPercent.innerText);
 };
