@@ -177,16 +177,14 @@ a.active {
 .confirmation {
     position: absolute;
     background-color: #fff;
-    padding: 70px 50px;
+    padding: 30px 20px;
     border-radius: 8px 8px 8px 8px;
-    transform: translateX(75%) translateY(45%);
+    transform: translateX(75%) translateY(5%);
     display: none;
     box-shadow: 5px 5px 10px #5e56cf7e;
 }
 
 .confirmation h3 {
-    text-align: center;
-    padding: 4px 0px;
     font-size: 28px;
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
@@ -197,3 +195,27 @@ a.active {
     font-size: 14px;
 
 }
+
+/* Table Css */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+.boookingDetails{
+  padding: 15px 0px ;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .ticteNo{
+      text-align: center;
+  }

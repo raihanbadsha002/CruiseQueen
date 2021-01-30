@@ -44,4 +44,21 @@ function bookBtn(firstClass, economy) {
        alert("Sorry..!!😙 you didn't Buy any ticket."); 
        return document.getElementById("confirmMessage").style.display = "none";
     }
+
+    // Booking Details Calculate==//
+    document.getElementById("firstClassTicketCount").innerText = parseInt(firstClassInput.value);
+    document.getElementById("economyTicketCount").innerText = parseInt(economyInput.value);
+
+    document.getElementById("firstClassTicketPrice").innerText = parseInt(firstClassInput.value) * 150;
+    document.getElementById("economyTicketPrice").innerText = parseInt(economyInput.value) * 100;
+
+    const subtotalTicketPrice = document.getElementById("subtotalTicketPrice");
+    const chargeTenPercent = document.getElementById("chargeVat");
+
+ // Calculate Subtotal Amount***/
+    subtotalTicketPrice.innerText = parseInt(firstClassInput.value) * 150 + parseInt(economyInput.value) * 100;
+ // Calculate Charge 10% VAT***/
+    chargeTenPercent.innerText = Math.round(document.getElementById("subtotalTicketPrice").innerText * 0.1);
+ // Calculate TotalCost***/
+    document.getElementById("totalAmount").innerText = parseInt(subtotalTicketPrice.innerText) + parseInt(chargeTenPercent.innerText);
 };
